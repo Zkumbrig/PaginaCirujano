@@ -1,10 +1,8 @@
-const slides = document.querySelectorAll('.container-slider');
-const indicators = document.querySelectorAll( '.slider-indicators li' );
-let currentSlide = 0;
+const buttons = [
+    document.getElementById('btnSlider1'),
+    document.getElementById('btnSlider2'),
+    document.getElementById('btnSlider3')
+]
 
-function showSlide(index){
-    slides.forEach(slide => {
-        slide.style.opacity = '0';
-    });
-    slides[index].style.opacity = '1'
-}
+let totalSlides = document.querySelectorAll('.container-slide' > li).length;
+let currentIndex = 0;
