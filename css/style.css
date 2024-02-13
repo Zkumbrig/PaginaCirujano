@@ -60,10 +60,10 @@ header{
     color: #ffffff;
     margin-right: 10px;
 }
-.links-reades ul{
+.links-redes ul{
     display: flex;
 }
-.links-reades ul li{
+.links-redes ul li{
     background-color: #ffffff;
     margin-left: 10px;
     height: 35px;
@@ -74,11 +74,11 @@ header{
     justify-content: center;
     cursor: pointer;
 }
-.links-reades ul li a{
+.links-redes ul li a{
     text-decoration: none;
     color: var(--color-icono);
 }
-.links-reades div{
+.links-redes div{
     display: none;
 }
 
@@ -271,6 +271,7 @@ header{
     padding: 24px 12px;
     position: relative;
     margin: 10px 0;
+    border-radius: 15px;
 }
 .servi-card:before {
     content: "";
@@ -280,6 +281,7 @@ header{
     top: 0;
     left: 0;
     background: rgba(25, 93, 150, 0.8);
+    border-radius: 15px;
 }
 .content-esp {
     position: relative;
