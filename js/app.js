@@ -1,3 +1,5 @@
+// Carrusel Slider 
+
 let sliderButtons = [
     document.getElementById('btnSlider1'),
     document.getElementById('btnSlider2'),
@@ -10,8 +12,21 @@ let currentIndex = 0;
 
 function updatePosition() {
     slides.forEach((slide, index) => {
-        slide.style.opaci
-    })
+        slide.style.opacity = index === currentIndex ? '1' : '0';
+    });
+    sliderButtons.forEach((btn) => {
+        btn.classList.remove('buttonActive');
+    });
+    sliderButtons[currentIndex].classList.add('buttonActive');
+
+    let currentSlide = slides[currentIndex];
+    let contentElement = currentSlide.querySelector('.content-slider');
+    contentElement.style.opacity = '0';
+    contentElement.style.transform = 'translateX(-100px)';
+    setTimeout(() => {
+        contentElement.style.opacity = '1';
+        contentElement.style.transform = 'translateX(0)';
+    }, 200);
 }
 
 function nextSlide() {
@@ -25,6 +40,6 @@ sliderButtons.forEach((button, index) => {
         updatePosition();
     });
 });
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 10000);
 
 updatePosition();

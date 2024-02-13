@@ -180,6 +180,12 @@ header{
     font-size: 2.3rem;
     gap: 10px;
     color: #fff;
+    transition: transform .2s;
+}
+.container-slider > li:nth-child(2) .content-slider{
+    right: 12%;
+    left: unset;
+    align-items: end;
 }
 .container-slider > li .content-slider .info-slider{
     height: auto;
@@ -192,6 +198,7 @@ header{
     border-radius: 30px;
     color: #fff;
     font-size: 20px;
+    cursor: pointer;
 }
 .container-slider + ul{
     width: 100%;
@@ -206,16 +213,15 @@ header{
     height: 16px;
     border-radius: 50%;
     background-color: #fff;
+    border: 2px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 .buttonActive{
-    background-color: var(--btnslider);
-    border: 2px solid #fff;
+    background-color: var(--btnslider) !important;
 }
-
 
 /*-------- ESPECIALIDADES --------*/
 
@@ -404,7 +410,7 @@ img {
 }
 .contenido-blog .details-blog article > img{
     width: 50%;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-right: 15px;
 }
 .contenido-blog .details-blog article .textBlog{
