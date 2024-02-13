@@ -32,7 +32,6 @@ main section{
     margin: 0 auto;
     max-width: 1280px;
 }
-
 /*-------- CONTENIDO INFORMACION HEADER --------*/
 header{
     /* height: calc(100vh - 220px); */
@@ -128,7 +127,7 @@ header{
     margin-left: 10px;
     height: 46px;
     width: 220px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,6 +169,29 @@ header{
     width: 100%;
     object-fit: cover;
     height: 100%;
+}
+.container-slider > li .content-slider{
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 12%;
+    font-size: 2.3rem;
+    gap: 10px;
+    color: #fff;
+}
+.container-slider > li .content-slider .info-slider{
+    height: auto;
+}
+.container-slider > li .content-slider .btnSlider{
+    width: max-content;
+    background-color: var(--btnslider);
+    font-size: 1.5rem;
+    padding: 12px 36px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
 }
 .container-slider + ul{
     width: 100%;
@@ -262,8 +284,6 @@ img {
 
 
 
-
-
 /*-------- INFO DOCTOR --------*/
 .drInfo{
     width: 100%;
@@ -313,7 +333,7 @@ img {
     font-size: 14px;
     height: 46px;
     width: 249px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -400,7 +420,7 @@ img {
     width: 151px;
     font-size: 15px;
     font-weight: 600;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -496,7 +516,7 @@ img {
     height: 50px;
     width: 170px;
     color: #ffffff;
-    border-radius: 23px;
+    border-radius: 30px;
     font-size: 16px;
     font-weight: 500;
     margin-top: 10px;
