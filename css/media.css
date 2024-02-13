@@ -130,7 +130,60 @@
         margin: 15px 0px;
         min-height: 1px;
     }
-    
+    .especialidades .row aside a {
+        width: calc(100% / 2 - 1.5rem);
+        margin: 0 0.75rem;
+    }
+
+    /*____ INFORMACION DOCTOR ____*/
+    .dr-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dr-section > img{
+        margin-bottom: 30px;
+    }
+    .btn-dr{
+        margin-top: 35px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-dr{
+        padding: 30px 12px;
+    }
+    .estudios{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 20px;
+        padding: 0px 12px;
+        margin-top: 30px;
+    }
+    .estudios div{
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 20px;   
+        width: 100%;
+        
+    }
+    .estudios div:first-child img{
+        width: 120px;
+        height: 80px;
+    }
+    .estudios div img{
+        width: 80px;
+        max-width: 100%;
+    }
+    .estudios div:last-child{
+        grid-column: span 1;
+    }
+    .estudios div p {
+        padding: 30px 0px;
+    }
+
     /*____ BLOG ____*/
     .contenido-blog .details-blog article {
         display: flex;
@@ -169,8 +222,28 @@
         flex-direction: column;
         transform: translateY(-100px);
     }
+    .form-container .form-info .info-contact h2{
+        font-size: 28px;
+    }
+    .form-container .form-info .info-contact p{
+        font-size: 16px;
+    }
+    .form-container .form-info .info-contact p a{
+        font-size: 16px;
+    }
+    .form-container .form-info .consulta-info .consulta > i{
+        padding: 10px;
+        font-size: 30px;
+    }
+    .form-container .form-info .consulta-info .consulta h2{
+        font-size: 28px;
+    }
+    .form-container .form-info .consulta-info .consulta > ul > li i{
+        font-size: 12px;
+    }
+    /*____ FORMULARIO ____*/
     .footer{
-        height: auto;
+        height: 670px;
     }
     .row-footer{
         flex-direction: column;
@@ -180,11 +253,142 @@
     .row-footer > section{
         width: 100%;
     }
+    .dr-footer-section{
+        margin: 0px 0px 20px 0px;
+    }
+    .ubicanos-footer{
+        margin: 20px 0px;
+    }
+
 }
 @media screen and (max-width: 768px){
     .container{
         max-width: 90%;
     }
+    /*____ INFORMACION HEADER ____*/
+    .header-info{
+        height: 60px;
+    }
+    .information a, .information a i{
+        text-decoration: none;
+        color: #ffffff;
+        margin-right: 10px;
+        display: flex;
+        font-size: 14px;
+    }
+    /*____ NAVBAR ____*/
+    .menu-icon{
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        margin-left: 20px;
+    }
+    .nav ul li{
+        margin: 10px 0px;
+    }
+    .nav ul li a{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .nav.active {
+        display: block;
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 40%; 
+        height: 100vh;
+        background-color: #fff; 
+        transition: transform 0.3s ease; 
+        z-index: 1000; 
+        overflow-y: auto; 
+    }
+    .btn-nav{
+        background-color: var(--headertop-btn-sub);
+        color: #ffffff;
+        margin-left: 10px;
+        height: 46px;
+        width: 92%;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .menu-icon p{
+        cursor: pointer; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #2B2B2B;
+        font-weight: 500;
+    }
+    .menu-icon i{
+        color: #223D80;
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+
+
+
+    /*____ INFORMACION DOCTOR ____*/
+    .dr-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dr-section > img{
+        margin-bottom: 30px;
+    }
+    .btn-dr{
+        margin-top: 35px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-dr{
+        padding: 30px 12px;
+    }
+    .estudios{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 20px;
+        padding: 0px 12px;
+    }
+    .estudios div{
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 20px;   
+        width: 100%;
+        
+    }
+    .estudios div:first-child img{
+        width: 120px;
+        height: 80px;
+    }
+    .estudios div img{
+        width: 80px;
+        max-width: 100%;
+    }
+    .estudios div:last-child{
+        grid-column: span 1;
+    }
+    .estudios div p {
+        padding: 30px 0px;
+    }
+
+
     /*____ BLOG ____*/
     .contenido-blog .details-blog {
         display: flex;
@@ -207,6 +411,34 @@
     .contenido-blog .details-blog article .textBlog {
         width: 100%; 
     }
+
+    /*____ FORMULARIO ____*/
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .form-container form{
+        transform: none;
+        width: 100%;
+        margin: 20px 0 40px 0;
+    }
+    .form-container .form-info{
+        width: 100%;
+    }
+
+    /*____ FOOTER ____*/
+    .footer-content{
+        padding-top: 70px;
+    }
+    .ubicanos-footer h3{
+        font-size: 23px;
+        margin-top: 15px;
+    }
+    .ubicanos-footer p{
+        font-size: 17px;
+    }
+
     
 }
 @media screen and (max-width: 576px){
@@ -224,15 +456,76 @@
         font-size: 11px;
     }
 
+    /*____ NAVBAR ____*/
+    .menu-icon{
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        margin-left: 20px;
+    }
+    .nav ul li{
+        margin: 10px 0px;
+    }
+    .nav ul li a{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .nav.active {
+        display: block;
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%; 
+        height: 100vh;
+        background-color: #fff; 
+        transition: transform 0.3s ease; 
+        z-index: 1000; 
+        overflow-y: auto; 
+    }
+    .btn-nav{
+        background-color: var(--headertop-btn-sub);
+        color: #ffffff;
+        margin-left: 10px;
+        height: 46px;
+        width: 92%;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .menu-icon p{
+        cursor: pointer; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #2B2B2B;
+        font-weight: 500;
+    }
+    .menu-icon i{
+        color: #223D80;
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+
     /*____ ESPECIALIDADES ____*/
 
     .especialidades .row aside a {
-        width: calc(100% / 2 - 1.5rem);
-        margin: 0 0.75rem;
+        width: 100%;
+        margin: 0;
     }
     .servi-card {
         text-align: center;
-        padding: 30px 15px;
         border-radius: 15px;
     }
     .blanco {
@@ -316,7 +609,7 @@
 
     }
 
-    /*formulario*/
+    /*____ FORMULARIO ____*/
     .form-container{
         display: flex;
         flex-direction: column;

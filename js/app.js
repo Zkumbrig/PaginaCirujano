@@ -1,5 +1,12 @@
-// Carrusel Slider 
+// Nav
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav').classList.toggle('active');
+});
 
+
+
+
+// Carrusel Slider 
 let sliderButtons = [
     document.getElementById('btnSlider1'),
     document.getElementById('btnSlider2'),

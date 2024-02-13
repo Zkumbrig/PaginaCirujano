@@ -83,6 +83,9 @@ header{
 }
 
 /*-------- NAVBAR --------*/
+.menu-icon{
+    display: none;
+}
 .navbar{
     padding: 17px 0px;
     height: 100px;
