@@ -274,7 +274,18 @@
         color: #ffffff;
         margin-right: 10px;
         display: flex;
-        font-size: 14px;
+        font-size: 16px;
+    }
+    .links-redes ul li{
+        background-color: #ffffff;
+        margin-left: 10px;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
     }
     /*____ NAVBAR ____*/
     .menu-icon{
@@ -453,7 +464,7 @@
         color: #ffffff;
         margin-right: 10px;
         display: flex;
-        font-size: 11px;
+        font-size: 15px;
     }
 
     /*____ NAVBAR ____*/
