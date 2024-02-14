@@ -9,7 +9,7 @@
     .navbar .navbar__content {
         justify-content: space-between;
     }
-    .navbar .navbar__content .logoDr{
+    .navbar .navbar__content > .logoDr{
         width: 15%;
     }
     .nav ul{
@@ -76,12 +76,12 @@
         cursor: pointer;
     }
     /*____ NAVBAR ____*/
-    .navbar .navbar__content .logoDr{
-        width: 180px;
+    .navbar .navbar__content > .logoDr{
+        width: 220px;
     }
     .logoDr img{
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
     }
     .nav ul li a{
@@ -261,6 +261,11 @@
     }
 
 }
+@media screen and (max-width: 950px) {
+    .navbar .navbar__content > .logoDr{
+        width: 150px;
+    }
+}
 @media screen and (max-width: 768px){
     .container{
         max-width: 90%;
@@ -288,55 +293,65 @@
         cursor: pointer;
     }
     /*____ NAVBAR ____*/
+    
     .menu-icon{
         display: block;
     }
-    .nav {
-        display: none;
+    .navbar .navbar__content > .logoDr{
+        width: 220px;
     }
     .nav ul {
         display: flex;
         flex-direction: column; 
         align-items: flex-start; 
-        margin-left: 20px;
+        padding: 20px 30px;
+    }
+    .nav ul .logoDr{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
     }
     .nav ul li{
         margin: 10px 0px;
     }
     .nav ul li a{
-        font-size: 16px;
+        font-size: 14px;
+        margin: 0;
         font-weight: 500;
     }
     .nav.active {
-        display: block;
+        transform: none;
     }
     .nav {
         position: fixed;
         top: 0;
-        left: 0;
+        left: 0;    
         width: 40%; 
         height: 100vh;
         background-color: #fff; 
         transition: transform 0.3s ease; 
-        z-index: 1000; 
-        overflow-y: auto; 
+        z-index: 1000;
+        overflow-y: auto;
+        transform: translateX(-100%);
+        box-shadow: 0 0 10px #00000055;
     }
     .btn-nav{
         background-color: var(--headertop-btn-sub);
         color: #ffffff;
         margin-left: 10px;
         height: 46px;
-        width: 92%;
+        width: 100%;
         border-radius: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
     }
-
     .menu-icon p{
         cursor: pointer; 
         display: flex;
+        font-size: 14px;
         align-items: center;
         justify-content: center;
         color: #2B2B2B;
@@ -347,10 +362,36 @@
         font-size: 30px;
         margin-left: 10px;
     }
-
-
-
-
+    .nav ul li:not(:last-child) a::before {
+        content: none;
+        width: auto;
+        height: auto;
+        background-color: initial;
+        transition: none;
+    }
+    .nav ul li a:hover::before {
+        width: auto;
+    }
+    /*____ SLIDER ____*/
+    .content-slider h2{
+        font-size: 28px;
+    }
+    .content-slider p{
+        font-size: 20px;
+    }
+    .container-slider > li .content-slider .btnSlider{
+        width: max-content;
+        background-color: var(--btnslider);
+        padding: 12px 20px;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .container-slider > li{
+        width: 100%;
+        height: 400px;
+    }
     /*____ INFORMACION DOCTOR ____*/
     .dr-section{
         flex-direction: column;
@@ -468,69 +509,63 @@
     }
 
     /*____ NAVBAR ____*/
-    .menu-icon{
-        display: block;
-    }
     .nav {
-        display: none;
+        width: 50%;
     }
-    .nav ul {
-        display: flex;
-        flex-direction: column; 
-        align-items: flex-start; 
-        margin-left: 20px;
+    .nav ul li:not(:last-child) a::before {
+        content: none;
+        width: auto;
+        height: auto;
+        background-color: initial;
+        transition: none;
     }
-    .nav ul li{
-        margin: 10px 0px;
-    }
-    .nav ul li a{
-        font-size: 16px;
-        font-weight: 500;
-    }
-    .nav.active {
-        display: block;
-    }
-    .nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 50%; 
-        height: 100vh;
-        background-color: #fff; 
-        transition: transform 0.3s ease; 
-        z-index: 1000; 
-        overflow-y: auto; 
+    .nav ul li a:hover::before {
+        width: auto;
     }
     .btn-nav{
         background-color: var(--headertop-btn-sub);
         color: #ffffff;
         margin-left: 10px;
         height: 46px;
-        width: 92%;
+        width: 100%;
         border-radius: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+    }   
+    /*____ SLIDER ____*/
+        
+    .slider-indicators {
+        position: relative;
+        top: 285px;
     }
-
-    .menu-icon p{
-        cursor: pointer; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #2B2B2B;
-        font-weight: 500;
+    .content-slider h2{
+        font-size: 22px;
     }
-    .menu-icon i{
-        color: #223D80;
-        font-size: 30px;
-        margin-left: 10px;
+    .content-slider p{
+        font-size: 16px;
     }
-
-
+    .container-slider > li .content-slider .btnSlider{
+        width: max-content;
+        background-color: var(--btnslider);
+        padding: 8px 14px;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .container-slider > li{
+        width: 100%;
+        height: 250px;
+    }   
     /*____ ESPECIALIDADES ____*/
-
+    .esp-title h3{
+        font-size: 28px;
+    }
+    .esp-title p{
+        font-size: 14px;
+    }
     .especialidades .row aside a {
         width: 100%;
         margin: 0;
@@ -564,8 +599,14 @@
         display: flex;
         flex-direction: column;
     }
+    .title-about h1{
+        font-size: 28px;
+    }
     .about-dr{
         padding: 30px 12px;
+    }
+    .about-dr p{
+        font-size: 14px;
     }
     .estudios{
         display: grid;
@@ -595,6 +636,7 @@
     }
     .estudios div p {
         padding: 30px 0px;
+        font-size: 14px;
     }
 
     /*____ BLOG ____*/
@@ -604,13 +646,23 @@
     .contenido-blog .details-blog{
         margin: 0;
     }
-
+    .title-blog h2{
+        font-size: 28px;
+    }
     .title-blog p{
         color: var(--texto);
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 25px;
     }
-
+    .textBlog h3{
+        font-size: 16px;
+    }
+    .textBlog p{
+        font-size: 14px;
+    }
+    .textBlog a{
+        font-size: 14px;
+    }
     .btnVerTodos{
         background-color: var(--headertop-btn-sub);
         color: #ffffff;
@@ -634,22 +686,454 @@
     .form-container .form-info{
         width: 100%;
     }
+    .form-container .form-info .info-contact h2{
+        font-size: 26px;
+    }
+    .form-container .form-info .info-contact p{
+        font-size: 14px;
+    }
+    .form-container .form-info .info-contact p a{
+        font-size: 14px;
+    }
+    .form-container .form-info .consulta-info .consulta > i{
+        padding: 10px;
+        font-size: 28px;
+    }
+    .form-container .form-info .consulta-info .consulta h2{
+        font-size: 26px;
+    }
+    .form-container .form-info .consulta-info .consulta > ul > li i{
+        font-size: 10px;
+    }
 
-    /*Footer*/
-    
+    /*____ FOOTER ____*/
+    .footer{
+        height: 700px;
+    }
+    .row-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .row-footer > section{
+        width: 100%;
+    }
+    .dr-footer-section{
+        margin: 0px 0px 20px 0px;
+    }
+    .ubicanos-footer{
+        margin: 20px 0px;
+    }
+}
+@media (min-width: 361px) and (max-width: 430px) {
+    .container{
+        width: 90%;
+    }
+    /*-------- CONTENIDO INFORMACION HEADER --------*/
+    .header-info{
+        background-color: var(--headertop-btn-sub);
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contentInformation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    .information{
+        width: 100%;
+        justify-content: left;
+        align-items: center;
+    }
+    .links-redes ul li{
+        background-color: #ffffff;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: 10px;
+
+    }
+    .information a, .information a i{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 12px;
+    }
+    .links-redes ul li a{
+        text-decoration: none;
+        color: var(--color-icono);
+        font-size: 10px;
+    }
+     /*____ NAVBAR ____*/
+    .navbar .navbar__content > .logoDr{
+        width: 180px;
+        height: 40px;
+    }
+    .nav {
+        width: 60%;
+    }
+    /*____ ESPECIALIDADES ____*/
+    .esp-title h3{
+        font-size: 22px;
+    }
+    .esp-title p{
+        font-size: 12px;
+    }
+    /*____ PARTE DEL DOCTOR ____*/
+    .dr-section > img{
+        margin-bottom: 30px;
+        height: 400px;
+        width: 300px;
+    }
+    .title-about h1{
+        font-size: 24px;
+    }
+    .about-dr p{
+        font-size: 12px;
+    }
+    .btn-dr{
+        color: #ffffff;
+        text-transform: uppercase;
+        background-color: var(--btndoctor);
+        font-weight: 600;
+        font-size: 12px;
+        height: 40px;
+        width: 200px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .estudios div{
+        color: #ffffff;
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 20px;   
+        width: 100%;
+        
+    }
+    .estudios div p {
+        padding: 30px 0px;
+        font-size: 12px;
+    }
+    /*____ BLOG ____*/
+    .title-blog h2{
+        font-size: 22px;
+    }
+    .title-blog p{
+        color: var(--texto);
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+    .textBlog h3{
+        font-size: 16px;
+    }
+    .textBlog p{
+        font-size: 12px;
+    }
+    .textBlog a{
+        font-size: 12px;
+    }
+    .btnVerTodos{
+        background-color: var(--headertop-btn-sub);
+        color: #ffffff;
+        height: 40px;
+        width: 120px;
+        font-size: 12px;
+    }
+    /*____ FORMULARIO ____*/
+    .form-container .form-info{
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .form-container form input, .form-container form textarea{
+        width: 100%;
+        border: 1px solid #ededed;
+        padding: 15px 15px;
+        font-size: 14px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+    .form-container .form-info .info-contact h2{
+        font-size: 22px;
+    }
+    .form-container .form-info .info-contact p{
+        font-size: 12px;
+    }
+    .form-container .form-info .info-contact p a{
+        font-size: 12px;
+    }
+    .form-container .form-info .consulta-info .consulta > i{
+        padding: 10px;
+        font-size: 22px;
+    }
+    .form-container .form-info .consulta-info .consulta h2{
+        font-size: 22px;
+    }
+    .form-container .form-info .consulta-info .consulta > ul li{
+        font-size: 12px;
+    }
+    .form-container .form-info .consulta-info .consulta > ul > li i{
+        font-size: 8px;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .form-container form{
+        transform: none;
+        width: 100%;
+        margin: 20px 0 40px 0;
+        padding: 10px 20px;
+    }
+    .form-container .form-info{
+        width: 100%;
+    }
+    .form-container form button{
+        height: 40px;
+        width: 120px;
+        font-size: 14px;
+    }
+    /*____ FOOTER ____*/
+    .dr-footer-section p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
     .ubicanos-footer h3{
-        font-size: 23px;
-        margin-top: 15px;
+        font-size: 22px;
     }
-
     .ubicanos-footer p{
-        font-size: 17px;
+        font-size: 16px;
     }
-
-    .footer-content{
-        padding-top: 20px;
+    .ubicanos-footer ul li a{
+        font-size: 14px;
+    }
+    .contactenos-footer h3{
+        font-size: 22px;
+    }
+    .contactenos-footer p{
+        font-size: 16px;
+    }
+    .contactenos-footer ul li a{
+        font-size: 14px;
+    }
+    .links-reades-footer li a{
+        height: 25px;
+        width: 25px;
+    }
+    .textcopy p{
+        color: #ffffff;
+        font-size: 14px;
     }
 }
-@media screen and (max-width: 390px){
+@media (max-width: 360px) {
+    .container{
+        width: 90%;
+    }
+    /*-------- CONTENIDO INFORMACION HEADER --------*/
+    .header-info{
+        background-color: var(--headertop-btn-sub);
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contentInformation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    .information{
+        width: 100%;
+        justify-content: left;
+        align-items: center;
+    }
+    .links-redes ul li{
+        background-color: #ffffff;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: 10px;
+
+    }
+    .information a, .information a i{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 12px;
+    }
+    .links-redes ul li a{
+        text-decoration: none;
+        color: var(--color-icono);
+        font-size: 10px;
+    }
+    
+    .navbar .navbar__content > .logoDr{
+        width: 180px;
+        height: 40px;
+    }
+    .nav {
+        width: 65%;
+    }
+    /*____ ESPECIALIDADES ____*/
+    .esp-title h3{
+        font-size: 22px;
+    }
+    .esp-title p{
+        font-size: 12px;
+    }
+    /*____ PARTE DEL DOCTOR ____*/
+    .dr-section > img{
+        margin-bottom: 30px;
+        height: 400px;
+        width: 300px;
+    }
+    .title-about h1{
+        font-size: 24px;
+    }
+    .about-dr p{
+        font-size: 12px;
+    }
+    .estudios div{
+        color: #ffffff;
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 20px;   
+        width: 100%;
+        
+    }
+    .estudios div p {
+        padding: 30px 0px;
+        font-size: 12px;
+    }
+    /*____ BLOG ____*/
+    .title-blog h2{
+        font-size: 22px;
+    }
+    .title-blog p{
+        color: var(--texto);
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+    .textBlog h3{
+        font-size: 16px;
+    }
+    .textBlog p{
+        font-size: 12px;
+    }
+    .textBlog a{
+        font-size: 12px;
+    }
+    .btnVerTodos{
+        background-color: var(--headertop-btn-sub);
+        color: #ffffff;
+        height: 40px;
+        width: 120px;
+        font-size: 12px;
+    }
+    /*____ FORMULARIO ____*/
+    .form-container .form-info{
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .form-container form input, .form-container form textarea{
+        width: 100%;
+        border: 1px solid #ededed;
+        padding: 15px 15px;
+        font-size: 14px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+    .form-container .form-info .info-contact h2{
+        font-size: 22px;
+    }
+    .form-container .form-info .info-contact p{
+        font-size: 12px;
+    }
+    .form-container .form-info .info-contact p a{
+        font-size: 12px;
+    }
+    .form-container .form-info .consulta-info .consulta > i{
+        padding: 10px;
+        font-size: 22px;
+    }
+    .form-container .form-info .consulta-info .consulta h2{
+        font-size: 22px;
+    }
+    .form-container .form-info .consulta-info .consulta > ul li{
+        font-size: 12px;
+    }
+    .form-container .form-info .consulta-info .consulta > ul > li i{
+        font-size: 8px;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .form-container form{
+        transform: none;
+        width: 100%;
+        margin: 20px 0 40px 0;
+        padding: 10px 20px;
+    }
+    .form-container .form-info{
+        width: 100%;
+    }
+    .form-container form button{
+        height: 40px;
+        width: 120px;
+        font-size: 14px;
+    }
+    /*____ FOOTER ____*/
+    .dr-footer-section p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .ubicanos-footer h3{
+        font-size: 20px;
+    }
+    .ubicanos-footer p{
+        font-size: 14px;
+    }
+    .ubicanos-footer ul li a{
+        font-size: 12px;
+    }
+    .contactenos-footer h3{
+        font-size: 20px;
+    }
+    .contactenos-footer p{
+        font-size: 14px;
+    }
+    .contactenos-footer ul li a{
+        font-size: 12px;
+    }
+    .links-reades-footer li a{
+        height: 25px;
+        width: 25px;
+    }
+    .textcopy p{
+        color: #ffffff;
+        font-size: 12px;
+    }
+}
+@media (max-width: 280px){
     
 }
+

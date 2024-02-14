@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --color-icono : #325070;
+    --headertop-btn-sub : #0E3C80;
+    --btnslider: #223D80;
+    --btndoctor: #F5AD38;
+    --navletter: #2B2B2B;
+    --especialidades: #457baa;
+    --texto: #545454;
+    --footer: #33566F;
+    --copyright: #335369;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    font-family:  'Roboto', sans-serif;
+    outline: none;
+    transition: .2s;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.drInfo{
+    width: 100%;
+    background: url("../img/slider/fondo-celeste.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+.dr-section{
+    display: flex;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-dr{
+    color: #ffffff;
+    padding: 0px 12px;
+}
+.about-dr p{
+    font-size: 17px;
+    margin-bottom: 14px;
+}
+
+.about-dr h2{
+    margin-bottom: 15px;
+    color: var(--headertop-btn-sub);
+}
+
+.title-line{
+    border-left: 4px solid var(--btnslider);
+    padding-left: 15px;
+    margin: 0px 0px 20px;
+}
+.title-about h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+.title-about h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0px 10px;
+}
+
+.estudiosrealizados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.title-line2{
+    border-left: 4px solid var(--btndoctor);
+    padding-left: 15px;
+    margin: 0px 0px 20px;
+}
+
+.title-about h2{
+    font-size: 30px;
+    font-weight: normal;
+    color: var(--headertop-btn-sub);
+    margin-bottom: 40px;
+}
+
+.estudiosrealizados .especialidades {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 50px 0;
+}
+
+.estudiosrealizados .especialidades .separador {
+    border-top: 1px solid #ccc;
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+.estudiosrealizados .especialidad{
+    display: flex;
+    justify-content: space-between;
+}
+
+.estudiosrealizados .especialidad i{
+    color: #223D80;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.estudiosrealizados .especialidad p{
+    color: #545454;
+    margin-right: 10px;
+    line-height: 25px;
+    padding: 0 50px 50px 0;
+}
+
+.estudiosrealizados .especialidad span{
+    color: #223D80;
+    margin-right: 3px;
+    font-weight: 500;
+}
+
+.estudiosrealizados .especialidad .imagenestudio img{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    object-fit: contain;
+}
