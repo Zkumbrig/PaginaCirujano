@@ -34,6 +34,8 @@
     .copyright {
         text-align: center;
     }
+
+    
 }
 
 @media screen and (max-width: 1050px) {
@@ -260,6 +262,84 @@
         margin: 20px 0px;
     }
 
+    /*____ PAGINA ABOUT ____*/
+    .title-about-dr h1{
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .title-about-dr h3{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    /*____ ESTUDIOS REALIZADOS ____*/
+
+    .title-about2 h2{
+        font-size: 26px;
+        color: #0E3C80;
+        font-weight: 500;
+    }
+    .infoEspecialidad p {
+        font-size: 16px;
+    }
+    .secciones .titlemem h2{
+        font-size: 16px;
+    }
+    
+    .about .container{
+        width: 90%;
+    }
+    .estudiosrealizados{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .informaciondoctor{
+        width: 100%;
+    }
+    .estudiosrealizados .especialidades{
+        padding: 0px 0px 50px 0px;  
+    }
+    .estudiosrealizados .especialidad{
+        display: flex;
+        justify-content: left;
+    }
+    .estudiosrealizados .especialidad .infoEspecialidad{
+        width: 75%;
+    }
+    .estudiosrealizados .especialidad p{
+        width: 100%;
+        margin-bottom: 14px;
+        padding: 0px;
+    }
+    .secciones{
+        width: 100%;
+    }
+    .secciones .titlemem {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        align-items: center;
+        padding: 1rem;
+        background-color: #0e3c80;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+    }
+    .secciones .membresias{
+        width: 100%;
+    }
+    .secciones .formentrena{
+        width: 100%;
+    }
+    .secciones .acticientifica{
+        width: 100%;
+    }
+    .secciones .evencientifica{
+        width: 100%;
+    }
+    .secciones .listas{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 950px) {
     .navbar .navbar__content > .logoDr{
@@ -489,6 +569,19 @@
     }
     .ubicanos-footer p{
         font-size: 17px;
+    }
+    /*____ PAGINA ABOUT ____*/
+    /*____ ESTUDIOS REALIZADOS ____*/
+    .title-about2 h2{
+        font-size: 24px;
+        color: #0E3C80;
+        font-weight: 500;
+    }
+    .infoEspecialidad p {
+        font-size: 16px;
+    }
+    .secciones .titlemem h2{
+        font-size: 16px;
     }
 
     
@@ -724,6 +817,67 @@
     .ubicanos-footer{
         margin: 20px 0px;
     }
+    /*____ PAGINA ABOUT ____*/
+    .title-about-dr h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .title-about-dr h3{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    /*____ ESTUDIOS REALIZADOS ____*/
+    .title-about2 h2{
+        font-size: 24px;
+        color: #0E3C80;
+        font-weight: 500;
+    }
+    .infoEspecialidad p {
+        font-size: 14px;
+    }
+    .secciones .titlemem h2{
+        font-size: 14px;
+    }
+    .estudiosrealizados{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .informaciondoctor{
+        width: 100%;
+    }
+    .estudiosrealizados .especialidades{
+        padding: 0px 0px 50px 0px;  
+    }
+    .estudiosrealizados .especialidad{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .estudiosrealizados .especialidad .infoEspecialidad{
+        width: 100%;
+    }
+    .estudiosrealizados .especialidad p{
+        width: 100%;
+        margin: 0px 0px 14px 0px;
+        padding: 0px;
+    }
+    .infomembresia .membresia{
+        display: flex;
+        flex-direction: column;
+    }
+    .membresia p{
+        font-size: 14px;
+    }
+    .infomembresia h3{
+        font-size: 22px;
+        color: #545454;
+    }
+    .infomembresia ul li{
+        font-size: 14px;
+    }
+    
 }
 @media (min-width: 361px) and (max-width: 430px) {
     .container{

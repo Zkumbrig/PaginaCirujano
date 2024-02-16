@@ -4,7 +4,6 @@ document.querySelector('.menu-icon').addEventListener('click', function() {
 });
 
 
-
 // Carrusel Slider 
 let sliderButtons = [
     document.getElementById('btnSlider1'),

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="img/favicon.png">
 </head>
-<body>
+<body class="about">
     <header>
         <section class="header-info">
             <div class="container contentInformation">
@@ -75,11 +76,11 @@
                 <img src="img/doctor/dr-ronald-gamarra.webp" alt="doctorRonald">
                 <div class="row">
                     <div class="about-dr">
-                        <div class="title-about title-line">
+                        <div class="title-about-dr title-line">
                             <h1>Dr. Ronal Gamarra</h1>
                             <h3>Cirujano Plastico Certificado</h3>
                         </div>
-                        <h2>CMP 47262 – RNE 24987</h2>
+                        <h2>CMP 47262 - RNE 24987</h2>
                         <p>Cirujano Plástico Certificado especializado en BRASIL, país con la mayor referencia mundial en Cirugia Plastica.</p> 
                         <p>Miembro de la Sociedad Peruana de Cirugia Plastica</p>
                         <p>Médico-cirujano egresado de la Universidad Peruana Cayetano Heredia, Lima - Perú</p> 
@@ -89,22 +90,23 @@
                 </div>
             </div>
         </section>
-
+    </header>
+    <main>
         <!--estudiosrealizados-->
-
-        <section class="estudiosrealizados">
+        <section class="estudiosrealizados container">
             <div class="informaciondoctor">
                 <div class="title-about title-line2">
                     <h2>Estudios Realizados</h2>
                 </div>
                 <div class="especialidades">
                     <div class="especialidad especialidad1">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <p><span>Especialización en Cirugía Plástica</span>
-                            Universidad Federal 
-                            <br>
-                            Fluminense - Rio de Janeiro - Brasil
-                        </p>
+                        <div class="infoEspecialidad">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p><span>Especialización en Cirugía Plástica</span>
+                                Universidad Federal 
+                                Fluminense - Rio de Janeiro - Brasil
+                            </p>
+                        </div>
                         <div class="imagenestudio">
                             <img src="img/doctor/estudios2.webp" alt="">
                         </div>
@@ -113,12 +115,13 @@
                     <div class="separador"></div>
 
                     <div class="especialidad especialidad2">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <p><span>Especialización en Cirugía General</span>
-                            Universidad Federal 
-                            <br>
-                            Fluminense - Rio de Janeiro - Brasil
-                        </p>
+                        <div class="infoEspecialidad">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p><span>Especialización en Cirugía General</span>
+                                Universidad Federal 
+                                Fluminense - Rio de Janeiro - Brasil
+                            </p>
+                        </div>
                         <div class="imagenestudio">
                             <img src="img/doctor/estudios2.webp" alt="">
                         </div>
@@ -127,12 +130,13 @@
                     <div class="separador"></div>
 
                     <div class="especialidad especialidad3">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <p><span>Médico - Cirujano</span>
-                            Universidad Peruana Cayetano Heredia 
-                            <br>
-                            - Lima - Perú
-                        </p>
+                        <div class="infoEspecialidad">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p><span>Médico - Cirujano</span>
+                                Universidad Peruana Cayetano Heredia 
+                                - Lima - Perú
+                            </p>
+                        </div>
                         <div class="imagenestudio">
                             <img src="img/doctor/estudios.webp" alt="">
                         </div>
@@ -142,86 +146,311 @@
 
                 </div>
             </div>
-            <!-- <div class="secciones">
-                <div class="membresias">
-                    <div class="titlemem">
+            <div class="secciones">
+                <section class="membresias boxshaw">
+                    <div class="titlemem" id="mem1">
                         <i class="fa-solid fa-building-columns"></i>
                         <h2>MEMBRESIAS</h2>
                     </div>
-                    <div class="membresia1">
-                        <p>
-                            <span>Miembro de la Sociedad Peruana de Cirugía Plástica y Reconstructiva</span>
-                            Sociedad Peruana de Cirugía Plástica
-                        </p>
-                        <img src="img/doctor/sociedad-peruana-cirugia-plastica.webp" alt="">
+                    <div class="infomembresia hidden">
+                        <div class="membresia">
+                            <p>
+                                <span>Miembro de la Sociedad Peruana de Cirugía Plástica y Reconstructiva</span>
+                                Sociedad Peruana de Cirugía Plástica
+                            </p>
+                            <img src="img/about/sociedad-peruana-cirugia-plastica.jpg.webp" alt="">
+                        </div>
+                    <div class="separador"></div>
+                        <div class="membresia">
+                            <p>
+                                <span>Miembro de la Federación IberolatinoAmericana de Cirugía Plástica</span>
+                                FILACP
+                            </p>
+                            <img src="img/about/filacp-logo.jpg.webp" alt="">
+                        </div>
                     </div>
-                    <div class="membresia2">
-                        <p>
-                            <span>Miembro de la Federación IberolatinoAmericana de Cirugía Plástica</span>
-                            FILACP
-                        </p>
-                        <img src="img/doctor/filacp-logo.webp" alt="">
-                    </div>
-                </div>
-                <div class="formentrena">
-                    <div class="titleformen">
+                </section>
+                <section class="listas formentrena boxshaw">
+                    <div class="titlemem" id="mem2">
                         <i class="fa-solid fa-building-columns"></i>
                         <h2>FORMACIÓN Y ENTRENAMIENTOS</h2>
                     </div>
-                    <ul class="lista formen">
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Servicio de Microcirugía. Instituto de Traumatología y Ortopedia (INTO). Rio de Janeiro – Brasil. 06/2014.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Servicio Dr. Ronaldo Pontes. Niteroi Dor. Rio de Janeiro-Brasil. 2013.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Servicio de Cirugía plástica pediátrica – Hospital Jesus- Dr. Henrique Cintra. Rio de Janiero – Brasil 2012.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Servicio de Cirugía Plástica y Reconstructiva. Hospital Santa Casa de Misericórdia y Clínica Ivo Pitanguy. Rio de Janeiro- Brasil . 10/2010.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Servicio de Cirugía Cráneo – Maxilo – Facial del Prof. Edgard Alves Costa. Hospital Santa Cruz de la Beneficencia Portuguesa de Niterói. Rio de Janeiro-Brasil. 07/2010.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Servicio de Cirugía General del Prof. Oscar Brandão Lira. Décima Enfermaría de la Santa Casa de Misericordia de Rio de Janeiro-Brasil. 01/2008 – 08/2008.</li>
-                    </ul>
-                </div>
-                <div class="acticientifica">
-                    <div class="titleformen">
+                    <div class="infomembresia">
+                        <ul>
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Servicio de Microcirugía. Instituto de Traumatología y Ortopedia (INTO). Rio de Janeiro - Brasil. 06/2014.
+
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>     
+
+                                Servicio Dr. Ronaldo Pontes. Niteroi Dor. Rio de Janeiro-Brasil. 2013.
+
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                
+                                Servicio de Cirugía plástica pediátrica - Hospital Jesus- Dr. Henrique Cintra. Rio de Janiero - Brasil 2012.
+
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Servicio de Cirugía Plástica y Reconstructiva. Hospital Santa Casa de Misericórdia y Clínica Ivo Pitanguy. Rio de Janeiro- Brasil . 10/2010.
+
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Servicio de Cirugía Cráneo - Maxilo - Facial del Prof. Edgard Alves Costa. Hospital Santa Cruz de la Beneficencia Portuguesa de Niterói. Rio de Janeiro-Brasil. 07/2010.
+
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                
+                                Servicio de Cirugía General del Prof. Oscar Brandão Lira. Décima Enfermaría de la Santa Casa de Misericordia de Rio de Janeiro-Brasil. 01/2008 - 08/2008.
+                            
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="listas acticientifica boxshaw">
+                    <div class="titlemem" id="mem3">
                         <i class="fa-solid fa-flask"></i>
                         <h2>ACTIVIDAD CIENTIFICA</h2>
                     </div>
-                    <h3>TRABAJOS CIENTIFICOS</h3>
-                    <ul class="listacientifica">
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Centurion P, Gamarra R: Carta ao Editor. Boletim Cirurgia Plastica, Journal do Instituto Ivo Pitanguy Jul/Agos 2015.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Centurión P., Romero C., Olivencia C., Gamarra R. Kaufmann P., Short Scar Facelift Without Temporal Flap: A 10 year Experience. Aesthetic Plastic Surgery.2014 Aug 7;38(4):670-7.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Gamarra R. Mentoplastia de aumento con implante de silicona: revisão bibliográfica e apresentação de dois casos no meu período de especialização. Monografía de conclusión del Curso de Especialización en Cirugía Plástica. Niterói; s.n; 2014. 44 p.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Centurión P., Olivencia C., Romero C, Gamarra R. Lipoabdominoplastia con cicatriz reducida sin neo-onfaloplastia en abdomen tipo III (Matarasso). Cir.plást. iberolatinoam. 2009; Vol. 35, 4:291-302.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Centurión P., Gamarra R. Nariz Mestiza Andina: Una propuesta quirúrgica. Cir Estet Plas.2009; 2(9):26-35.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Loreti T. C., Cathala B. E., Colnago B. K., Gamarra G. R., Bittencourt M. E., Ramos F. T., Diagnóstico de Pseudomixoma Peritoneal no Hospital Universitario. Conduta Médica 2011-13 (49) 10-11.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Palombo.A, Fainstein C, Gamarra R., Oliveira Sa F, Fialho Neto F., Pancreatite Aguda Causada por Cistoadenoma Mucinoso Pancreático. Conduta Médica 2011-13 (49) 22-25.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>R. Gamarra, M.D., J.C. Munoz, M.D., M.E. Galloso, M.D., R.A. Accinelli, M.D., Prevalence of Tuberculosis Infection in Jose Sabogal High School, Where a Student Died of Pulmonary Tuberculosis. Am J Respir Crit Care Med, Abstracts issue 2007, vol. 175, pag A415.</li>
-                    </ul>
-                </div>
-                <div class="evencientifica">
-                    <div class="titlevento">
+                    <div class="infomembresia">
+                        <h3>TRABAJOS CIENTIFICOS</h3>
+                        <ul>
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Centurion P, Gamarra R: Carta ao Editor. Boletim Cirurgia Plastica, Journal do Instituto Ivo Pitanguy Jul/Agos 2015.
+                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Centurión P., Romero C., Olivencia C., Gamarra R. Kaufmann P., Short Scar Facelift Without Temporal Flap: A 10 year Experience. Aesthetic Plastic Surgery.2014 Aug 7;38(4):670-7.
+                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Gamarra R. Mentoplastia de aumento con implante de silicona: revisão bibliográfica e apresentação de dois casos no meu período de especialização. Monografía de conclusión del Curso de Especialización en Cirugía Plástica. Niterói; s.n; 2014. 44 p.
+                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Centurión P., Olivencia C., Romero C, Gamarra R. Lipoabdominoplastia con cicatriz reducida sin neo-onfaloplastia en abdomen tipo III (Matarasso). Cir.plást. iberolatinoam. 2009; Vol. 35, 4:291-302.
+                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Centurión P., Gamarra R. Nariz Mestiza Andina: Una propuesta quirúrgica. Cir Estet Plas.2009; 2(9):26-35.
+
+                            </li>
+                            
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Loreti T. C., Cathala B. E., Colnago B. K., Gamarra G. R., Bittencourt M. E., Ramos F. T., Diagnóstico de Pseudomixoma Peritoneal no Hospital Universitario. Conduta Médica 2011-13 (49) 10-11.
+                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Palombo.A, Fainstein C, Gamarra R., Oliveira Sa F, Fialho Neto F., Pancreatite Aguda Causada por Cistoadenoma Mucinoso Pancreático. Conduta Médica 2011-13 (49) 22-25.
+                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                R. Gamarra, M.D., J.C. Munoz, M.D., M.E. Galloso, M.D., R.A. Accinelli, M.D., Prevalence of Tuberculosis Infection in Jose Sabogal High School, Where a Student Died of Pulmonary Tuberculosis. Am J Respir Crit Care Med, Abstracts issue 2007, vol. 175, pag A415.
+                            
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="listas vencientifica boxshawsi">
+                    <div class="titlemem" id="mem4">
                         <i class="fa-solid fa-briefcase"></i>
                         <h2>EVENTOS CIENTIFICOS</h2>
                     </div>
-                    <ul class="listaevento">
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Congreso Cirugía Plástica y Reconstructiva de Filacp, Lima-Perú, 2018.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>VII Simposio Internacional, Avances en Cirugía Plástica. Lima-Perú, 2017.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>XXI Congreso Internacional de la Sociedad Peruana de Cirugía Plastica,2016.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>II Curso Internacional ISAPS, 2016.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>31th Dallas Rhinoplasty Symposium, Texas, 03/2014.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Curso Internacional de Contorno Corporal Body Contour. São Paulo. 10/2013.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>II Workshop Toxina Botulínica – AexPi. Hospital Santa Casa da Misericordia Rio de Janeiro. 10/2013.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Proyecto Open 2012 Curso de Inmersión en Rinoplastia Estructurada. Rio de Janeiro. 10/2012.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>31 Jornada Carioca de Cirugía Plástica. 08/2012.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>XIII Simposio Internacional de Cirugía Plástica. São Paulo. 03/2012.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Curso Integrado de los Servicios Credenciados. Sociedad Brasilera de Cirugía Plástica-Regional Rio de Janeiro. Marzo – 11/2011.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Curso de Actualización en Trauma de Cara. Educación Continuada RJ de la ABCCMF. Dr. Ricardo Lopes da Cruz. Abril – 11/ 2011.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>Curso de Actualización en el abordaje del quemado. Rio de Janeiro. 11/2011.</li>
-                        <li><i class="fa-solid fa-check" style="color: #FFD43B;"></i>XVIII Encuentro AExPI, Asociación dos Ex – alumnos do Profesor Ivo Pitanguy. Rio de Janeiro. 10/2011.</li>
-                    </ul>
-                </div>
-            </div>  -->
+                    <div class="infomembresia">
+                        <ul>
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Congreso Cirugía Plástica y Reconstructiva de Filacp, Lima-Perú, 2018.
+                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                VII Simposio Internacional, Avances en Cirugía Plástica. Lima-Perú, 2017.
+
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                XXI Congreso Internacional de la Sociedad Peruana de Cirugía Plastica,2016.
+                                                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                II Curso Internacional ISAPS, 2016.  
+                                                          
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                31th Dallas Rhinoplasty Symposium, Texas, 03/2014.
+
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Curso Internacional de Contorno Corporal Body Contour. São Paulo. 10/2013.
+                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                II Workshop Toxina Botulínica – AexPi. Hospital Santa Casa da Misericordia Rio de Janeiro. 10/2013.
+                                                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Proyecto Open 2012 Curso de Inmersión en Rinoplastia Estructurada. Rio de Janeiro. 10/2012.
+
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                31 Jornada Carioca de Cirugía Plástica. 08/2012.         
+
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                XIII Simposio Internacional de Cirugía Plástica. São Paulo. 03/2012.
+                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Curso Integrado de los Servicios Credenciados. Sociedad Brasilera de Cirugía Plástica-Regional Rio de Janeiro. Marzo – 11/2011.
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Curso de Actualización en Trauma de Cara. Educación Continuada RJ de la ABCCMF. Dr. Ricardo Lopes da Cruz. Abril – 11/ 2011.
+                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                Curso de Actualización en el abordaje del quemado. Rio de Janeiro. 11/2011.
+                            
+                            </li>
+
+                            <li>
+                                <div class="checkicoc">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                XVIII Encuentro AExPI, Asociación dos Ex – alumnos do Profesor Ivo Pitanguy. Rio de Janeiro. 10/2011.
+                            
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div> 
         </section>
-
-    </header>
-    <main>
-
     </main>
     <footer class="footer">
         <div class="container footer-content">
@@ -268,6 +497,6 @@
             </div>  
         </div>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="js/about.js"></script>
 </body>
 </html>

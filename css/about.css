@@ -10,6 +10,13 @@
     --footer: #33566F;
     --copyright: #335369;
 }
+.boxshaw{
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.boxshawsi{
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
 *{
     margin: 0;
     padding: 0;
@@ -75,8 +82,8 @@
 .estudiosrealizados{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+    align-items: start;
+    padding: 70px 0;
 }
 
 .title-line2{
@@ -107,7 +114,9 @@
     display: flex;
     justify-content: space-between;
 }
-
+.estudiosrealizados .especialidad .infoEspecialidad{
+    display: flex;
+}
 .estudiosrealizados .especialidad i{
     color: #223D80;
     margin-right: 10px;
@@ -132,4 +141,110 @@
     align-items: center;
     text-align: center;
     object-fit: contain;
+}
+
+.secciones .titlemem {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0e3c80;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    width: 600px;
+}
+
+.secciones .titlemem i {
+    margin-right: 15px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.secciones .membresias .separador{
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.secciones .membresias .titlemem {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.secciones .vencientifica .titlemem {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.secciones .titlemem h2{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.secciones .infomembresia li{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.secciones .acticientifica .infomembresia > h3{
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.secciones .listas .infomembresia .checkicoc{
+    color: #faa22e;
+    margin-right: 10px;
+}
+
+.secciones .listas .infomembresia li{
+    color: #545454;
+    margin-right: 10px;
+    line-height: 20px;
+}
+
+.secciones .membresias .membresia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secciones .membresias .membresia p {
+    width: 75%;
+}
+
+.secciones .membresias .membresia span{
+    color: var(--btnslider);
+    font-weight: 500;
+    margin-right: 3px;
+}
+
+.secciones .membresias .membresia img{
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    display: flex;
+    align-content: center;
+}
+
+.secciones > section{
+    width: 600px;
+    height: max-content;
+    position: relative;
+}
+.secciones > section .titlemem + .infomembresia{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 2rem;
+    display: none;
+    transition: max-height 0.3s ease-out;
+}
+.secciones > section .active + .infomembresia{
+    display: block;
+    height: auto;
+    border-radius: 0;
+    max-height: 1000px;
 }
