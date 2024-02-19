@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --color-icono : #325070;
+    --headertop-btn-sub : #0E3C80;
+    --btnslider: #223D80;
+    --btndoctor: #F5AD38;
+    --navletter: #2B2B2B;
+    --especialidades: #457baa;
+    --texto: #545454;
+    --footer: #33566F;
+    --copyright: #335369;
+    --colorTriangle: #f18e00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    font-family:  'Roboto', sans-serif;
+    outline: none;
+    transition: .2s;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.title-content{
+    width: 100%;
+    height: 330px;
+    background: no-repeat center url("https://png.pngtree.com/background/20220724/original/pngtree-business-abstract-geometric-background-simple-rectangle-picture-image_1741666.jpg");
+    background-size: cover;
+    background-clip: padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 5px 10px -5px var(--btndoctor); NI IDEA SI PONERLO O NO*/
+}
+.title-content h1{
+    font-size: 2.5rem;
+    color: var(--headertop-btn-sub);
+
+}
+main{
+    padding: 70px 0;
+}
+
+.sub-title-galery h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--headertop-btn-sub);
+}
+
+/* .grid{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.grid .item{
+    width: 25%;
+    padding: 0 0.75rem;
+}
+.grid .item .item-contenido .antesDespues{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid .item .item-contenido > div img{
+    object-fit: contain;
+}
+.grid .item .item-contenido > div img:last-child{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.caja-info-contenido{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: var(--headertop-btn-sub);
+    height: 50px;
+}
+.caja-info-contenido h3{
+    font-weight: 400;
+    font-size: 18px;
+} */
+
+
+.categorias {
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin: 20px 0px;
+    padding: 0 0.75rem;
+}
+    
+.categorias a {
+    align-items: center;
+	background-color: var(--headertop-btn-sub);
+    padding: 0.65em;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 1.15;
+    font-size: 15px;
+    cursor: pointer; 
+}
+.categorias a.activo {
+    background: var(--colorTriangle);    
+	color: #FFFFFF;
+	text-shadow: 0px 0px 10px var(--hover);
+}
+
+.barra-busqueda {
+	width: 300px;
+	height: 35px;
+	line-height: 40px;
+	background: #eaeaea;
+	border-radius: 100px;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+	outline: none;
+}
+
+
+.grid { 
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+	opacity: 1;
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	width: 25%;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.grid .item-contenido {
+	position: relative;
+	border-radius: 15px 15px 15px 15px;
+    margin: 0;
+}
+.item .item-contenido .antesDespues{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item .item-contenido .antesDespues img{
+    height: 100%;
+}
+
+.caja-info-contenido{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: var(--headertop-btn-sub);
+    height: 50px;
+    margin-top: 0;
+}
+.caja-info-contenido h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.9);
+	width: 100%;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.overlay.activo {
+	display: flex;
+}
+
+.overlay img {
+	width: 600px;
+	border-radius: 10px;
+}
+
+.overlay .descripcion {
+	display: block;
+	background: #fff;
+	padding: 5px;
+	text-align: center;
+	margin-top: 5px;
+	border-radius: 10px;
+	max-width: 60%;
+	font-size: 12px;
+}
+
+.contenedor-img {
+	position: relative;
+}
+
+.overlay #btn-cerrar-popup {
+	background: none;
+	font-size: 20px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}

@@ -1,0 +1,239 @@
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+@media screen and (max-width: 1280px){
+    .container{
+        margin: 0 auto;
+        max-width:  1200px;
+        width: 100%;
+    }
+    .categorias {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .categorias [categ-a] {
+        display: flex;
+        flex-wrap: wrap; 
+        width: 100%; 
+        gap: 10px;
+    }
+    .barra-busqueda{
+        margin-top: 20px;
+    }
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start; 
+        margin: 20px 0px;
+        padding: 0;
+        width: 100%;
+    }
+    .grid .item {
+        width: calc(100% / 3);
+    }
+
+    .item .item-contenido .antesDespues {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .item .item-contenido .antesDespues img{
+        width: 100%;
+        height: auto;
+    }
+    .overlay img {
+        width: 400px;
+    }
+}
+ @media screen and (max-width: 1100px){
+	.container-body{
+	  flex-wrap: wrap;
+	}
+	.colum1{
+	  width: 100%;
+	}
+	.colum2{
+	  margin-top: 0rem;
+	}
+  }
+
+
+  @media screen and (max-width: 990px){
+    .container{
+        max-width: 95%;
+    }
+    .categorias [barra-b]{
+        width: 50%;
+    }
+    .barra-busqueda {
+        width: 100%;
+    }
+    .title-content h1{
+        font-size: 32px;
+    }
+    .sub-title-galery h2{
+        font-size: 28px;
+    }
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start; 
+        margin: 20px 0px;
+        padding: 0;
+        width: 100%;
+    }
+    .grid .item{
+        width: calc(100% / 3);
+    }
+
+    .item .item-contenido .antesDespues {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .item .item-contenido .antesDespues img{
+        width: 100%;
+        height: auto;
+    }
+    .overlay img {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 90%;
+    }
+    .categorias [barra-b]{
+        width: 50%;
+    }
+    .barra-busqueda {
+        width: 100%;
+    }
+    .title-content{
+        width: 100%;
+        height: 280px;
+        background: no-repeat center url("https://png.pngtree.com/background/20220724/original/pngtree-business-abstract-geometric-background-simple-rectangle-picture-image_1741666.jpg");
+        background-size: cover;
+        background-clip: padding-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* box-shadow: 0 5px 10px -5px var(--btndoctor); NI IDEA SI PONERLO O NO*/
+    }
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start; 
+        margin: 20px 0px;
+        padding: 0;
+        width: 100%;
+    }
+    .grid .item{
+        width: calc(100% / 2);      
+    }
+
+    .item .item-contenido .antesDespues {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .item .item-contenido .antesDespues img{
+        width: 100%;
+        height: auto;
+    }
+    .overlay img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .container{
+        max-width: 90%;
+    }
+    .categorias [barra-b]{
+        width: 100%;
+    }
+    .barra-busqueda {
+        width: 100%;
+    }
+    .title-content{
+        width: 100%;
+        height: 240px;
+        background: no-repeat center url("https://png.pngtree.com/background/20220724/original/pngtree-business-abstract-geometric-background-simple-rectangle-picture-image_1741666.jpg");
+        background-size: cover;
+        background-clip: padding-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* box-shadow: 0 5px 10px -5px var(--btndoctor); NI IDEA SI PONERLO O NO*/
+    }
+    .title-content h1{
+        font-size: 28px;
+    }
+    .sub-title-galery h2{
+        font-size: 24px;
+    }
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start; 
+        margin: 20px 0px;
+        padding: 0;
+        width: 100%;
+    }
+    .grid .item{
+        width: 100%;      
+    }
+
+    .item .item-contenido .antesDespues {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .item .item-contenido .antesDespues img{
+        width: 100%;
+        height: auto;
+    }
+    .overlay img {
+        width: 400px;
+    }
+}
+@media (min-width: 361px) and (max-width: 430px){
+    .container{
+        width: 90%;
+    }
+    .categorias [barra-b]{
+        width: 100%;
+    }
+    .barra-busqueda {
+        width: 100%;
+    }
+    .overlay img {
+        width: 300px;
+    }
+}
+@media (max-width: 360px){
+    .container{
+        width: 90%;
+    }
+    .categorias [barra-b]{
+        width: 100%;
+    }
+    .barra-busqueda {
+        width: 100%;
+    }
+    .overlay img {
+        width: 300px;
+    }
+}
