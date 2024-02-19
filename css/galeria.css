@@ -11,6 +11,10 @@
     --copyright: #335369;
     --colorTriangle: #f18e00;
 }
+.hidden {
+    display: none;
+}
+
 *{
     margin: 0;
     padding: 0;

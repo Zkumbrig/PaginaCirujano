@@ -55,3 +55,4 @@ window.addEventListener('load', () => {
 		evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
 	});
 });
+
