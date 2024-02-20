@@ -1,8 +1,3 @@
-// Nav
-document.querySelector('.menu-icon').addEventListener('click', function() {
-    document.querySelector('.nav').classList.toggle('active');
-});
-
 const grid = new Muuri('.grid', {
 	layout: {
 		rounding: false
@@ -55,4 +50,4 @@ window.addEventListener('load', () => {
 		evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
 	});
 });
-
+console.log("Hola, es una prueba de galeria");
