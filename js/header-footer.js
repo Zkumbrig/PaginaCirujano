@@ -8,7 +8,7 @@ const newHtml = `
     <div class="information">
         <a href=""><i class="fa-solid fa-envelope"></i>consultas@ronaldgamarra.com</a>
         <a href=""><i class="fa-brands fa-whatsapp"></i>984 768 177</a>
-        <a href=""><i class="fa-solid fa-location-dot"></i>Av. Javier Prado Este 1684 San Isidro</a>
+        <a href="https://maps.app.goo.gl/y1mNAn3gai99Wyx89"><i class="fa-solid fa-location-dot"></i>Av. Javier Prado Este 1684 San Isidro</a>
     </div>
     <div class="links-redes">
         <ul>
@@ -48,7 +48,7 @@ const newHtml = `
             <li><a href="categoria.html">No Quirúrjicos</a></li>
             <li><a href="galeria.html">Galería</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li class="btn-nav" ><i class="fa-regular fa-calendar"></i><a href="contact.html" >Contactanos</a></li>
+            <a href="contact.html" class="btn-nav" ><i class="fa-regular fa-calendar"></i><p>Contactanos</p></a>
         </ul>
     </div>
     <!-- <div class="menu-icon">
@@ -68,8 +68,8 @@ const newFooter = `<div class="container footer-content">
         <h3>Ubícanos</h3>
         <p>Visítanos con una previa cita</p>
         <ul>
-            <li><a href=""><i class="fa-solid fa-location-dot"></i>CLÍNICA HIGUERETA - Av. Javier prado este 1684 San Isidro</a></li>
-            <li><a href=""><i class="fa-solid fa-location-dot"></i>MEDICENTER SAN LUIS - Jr.Augusto Durand 2639, San Luis 15021</a></li>
+            <li><a href="https://maps.app.goo.gl/y1mNAn3gai99Wyx89"><i class="fa-solid fa-location-dot"></i>CLÍNICA HIGUERETA - Av. Javier prado este 1684 San Isidro</a></li>
+            <li><a href="https://maps.app.goo.gl/tiePAKFnjRgujCZG9"><i class="fa-solid fa-location-dot"></i>MEDICENTER SAN LUIS - Jr.Augusto Durand 2639, San Luis 15021</a></li>
         </ul>
     </section>
     <section class="contactenos-footer">

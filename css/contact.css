@@ -26,3 +26,175 @@
     margin: 0 auto;
     max-width: 1280px;
 }
+.contactenos-containers{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0px;
+}
+.datosContact{
+    width: 30%;
+}
+.datosContact p{
+    color: var(--btndoctor);
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.datosContact > p{
+    padding-left: 80px;
+    position: relative;
+}
+.datosContact > p::before{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: var(--btndoctor);
+    left: 0;
+    top: 6px;
+}
+.datosContact > p::after{
+    content: "";
+    position: absolute;
+    background: var(--btndoctor);
+    top: 8px;
+    left: 14px;
+    height: 2px;
+    width: 50px;
+}
+.datosContact h1{
+    color: var(--headertop-btn-sub);
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.datosContact .separador{
+    border-top: 1px solid #f1f1f1;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.correo{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.datosContact .correo div{
+    display: flex;
+    justify-content: center;
+}
+.datosContact .correo div i{
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 35px;
+    color: var(--btndoctor);
+}
+.datosContact .correo .details{
+    display: flex;
+    flex-direction: column;
+}
+.datosContact .correo .details h2{
+    font-size: 24px;
+    color: #1F1F1F;
+    margin-bottom: 10px;
+}
+.datosContact .correo .details p span{
+    color: var(--texto);
+    font-size: 16px;
+}
+.datosContact .correo .details p{
+    color: #000000;
+    font-size: 16px;
+    margin: 0;
+    line-height: 25px;
+}
+.ubicacion{
+    width: 100%;
+    display: flex;
+}
+.datosContact .ubicacion div{
+    display: flex;
+    justify-content: center;
+}
+.datosContact .ubicacion div i{
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 35px;
+    color: var(--btndoctor);
+}
+.datosContact .ubicacion .details{
+    display: flex;
+    flex-direction: column;
+}
+.datosContact .ubicacion .details h2{
+    color: #1F1F1F;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.datosContact .ubicacion .details p{
+    color: #000000;
+    margin: 0;
+    font-size: 16px;
+    line-height: 25px;
+}
+.datosContact .ubicacion .details a{
+    margin-top: 10px;
+    color: var(--btndoctor);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.formulario{
+    width: 60%;
+    background-color: #f4fcff;
+    padding: 2rem;
+}
+.formulario .text-formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 15px;
+}
+.formulario .text-formulario h2{
+    color: var(--headertop-btn-sub);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.formulario .text-formulario p{
+    color: #000000;
+    font-size: 16px;
+    font-style: italic;
+}
+.formulario form .form-group{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.formulario form input, .formulario form textarea{
+    width: 100%;
+    border: 1px solid #ededed;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.formulario form button{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--btndoctor);
+    height: 50px;
+    width: 100%;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}

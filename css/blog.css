@@ -26,3 +26,73 @@
     margin: 0 auto;
     max-width: 1280px;
 }
+main section{
+    padding: 70px 0;
+}
+.title-line{
+    border-left: 4px solid var(--btndoctor);
+    padding-left: 15px;
+    margin: 0px 0px 20px;
+}
+.title-blog h2{
+    color: var(--headertop-btn-sub);
+    font-weight: 400;
+    font-size: 32px;
+}
+.title-blog p{
+    color: var(--texto);
+    font-size: 16px;
+}
+.contenido-blog .details-blog{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.contenido-blog .details-blog article{
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.contenido-blog .details-blog article:not(article:nth-child(2)):not(article:last-child){
+    padding-right: 20px;
+}
+.contenido-blog .details-blog article > img{
+    width: 50%;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+.contenido-blog .details-blog article .textBlog{
+    width: 50%;
+    height: max-content;
+}
+.textBlog h3{
+    color: var(--headertop-btn-sub);
+}
+.contenido-blog .details-blog article .textBlog p{
+    color: var(--texto);
+    margin: 15px 0;
+}
+.contenido-blog .details-blog article .textBlog a{
+    color: var(--btndoctor);
+    font-weight: 500;
+}
+.contenido-blog .details-blog article .textBlog a:hover i{
+    transform: translateX(10px);
+}
+.btnVerTodos{
+    background-color: var(--headertop-btn-sub);
+    color: #ffffff;
+    height: 46px;
+    width: 151px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
