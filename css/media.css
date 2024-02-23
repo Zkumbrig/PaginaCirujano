@@ -12,6 +12,9 @@
     .navbar .navbar__content > .logoDr{
         width: 15%;
     }
+    .navbar img{
+        width: 100%;
+    }
     .nav ul{
         display: flex;
         justify-content: center;
@@ -39,6 +42,17 @@
 }
 
 @media screen and (max-width: 1050px) {
+    .btn-nav{
+        background-color: var(--headertop-btn-sub);
+        color: #ffffff;
+        height: 46px;
+        width: 150px;
+        cursor: pointer;
+        justify-content: space-evenly;
+    }
+    .nav ul .btn-nav p{
+        margin: 0;
+    }
     .contenido-blog .details-blog article {
         flex-direction: column;
         margin: auto;
@@ -89,13 +103,6 @@
     .nav ul li a{
         font-weight: 500;
         font-size: 12px;
-    }
-    .btn-nav{
-        background-color: var(--headertop-btn-sub);
-        color: #ffffff;
-        height: 46px;
-        width: 150px;
-        cursor: pointer;
     }
     .nav ul .btn-nav a{
         color: #ffffff;
@@ -419,13 +426,14 @@
     .btn-nav{
         background-color: var(--headertop-btn-sub);
         color: #ffffff;
-        margin-left: 10px;
+        margin: 10px 0 0 0;
         height: 46px;
         width: 100%;
         border-radius: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 15px;
         cursor: pointer;
     }
     .menu-icon p{
@@ -618,7 +626,7 @@
     .btn-nav{
         background-color: var(--headertop-btn-sub);
         color: #ffffff;
-        margin-left: 10px;
+        margin: 10px 0 0 0;
         height: 46px;
         width: 100%;
         border-radius: 30px;
@@ -627,6 +635,7 @@
         justify-content: center;
         cursor: pointer;
     }   
+    
     /*____ SLIDER ____*/
         
     .slider-indicators {

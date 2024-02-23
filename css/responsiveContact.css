@@ -1,0 +1,340 @@
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+@media screen and (max-width: 1280px){
+    .container{
+        margin: 0 auto;
+        max-width:  1200px;
+        width: 100%;
+    }
+    .datosContact p{
+        font-size: 14px;
+    }
+    .datosContact h1{
+        font-size: 28px;
+    }
+    .datosContact .correo div i{
+        font-size: 30px;
+    }
+    .datosContact .correo .details h2{
+        font-size: 22px;
+    }
+    .datosContact .correo .details p span{
+        font-size: 16px;
+    }
+    .datosContact .correo .details p{
+        font-size: 16px;
+    }
+    .datosContact .ubicacion div i{
+        font-size: 30px;
+    }
+    .datosContact .ubicacion .details h2{
+        font-size: 22px;
+    }
+    .datosContact .ubicacion .details p{
+        font-size: 16px;
+    }
+    .formulario .text-formulario h2{
+        font-size: 28px;
+    }
+    .formulario .text-formulario p{
+        font-size: 16px;
+    }
+    .datosContact .ubicacion .details a{
+        font-size: 16px;
+    }
+    .formulario form input, .formulario form textarea{
+        padding: 15px 15px;
+    }
+    .formulario form button{
+        margin-top: 20px;
+        height: 45px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .container{
+        max-width: 95%;
+    }
+    .datosContact p{
+        font-size: 12px;
+    }
+    .datosContact h1{
+        font-size: 26px;
+    }
+    .datosContact .correo div i{
+        font-size: 28px;
+    }
+    .datosContact .correo .details h2{
+        font-size: 20px;
+    }
+    .datosContact .correo .details p span{
+        font-size: 14px;
+    }
+    .datosContact .correo .details p{
+        font-size: 14px;
+    }
+    .datosContact .ubicacion div i{
+        font-size: 26px;
+    }
+    .datosContact .ubicacion .details h2{
+        font-size: 20px;
+    }
+    .datosContact .ubicacion .details p{
+        font-size: 14px;
+    }
+    .datosContact .ubicacion .details a{
+        font-size: 14px;
+    }
+    .formulario{
+        width: 60%;
+        background-color: #f4fcff;
+        padding: 1rem;
+    }
+    .formulario .text-formulario h2{
+        font-size: 26px;
+    }
+    .formulario .text-formulario p{
+        font-size: 14px;
+    }
+    .formulario form input, .formulario form textarea{
+        padding: 15px 15px;
+        font-size: 14px;
+    }
+    .formulario form button{
+        margin-top: 20px;
+        height: 40px;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 90%;
+    }
+    .datosContact{
+        width: 40%;
+    }
+    .datosContact p{
+        font-size: 12px;
+    }
+    .datosContact h1{
+        font-size: 24px;
+    }
+    .datosContact .correo div i{
+        font-size: 28px;
+    }
+    .datosContact .correo .details h2{
+        font-size: 20px;
+    }
+    .datosContact .correo .details p span{
+        font-size: 14px;
+    }
+    .datosContact .correo .details p{
+        font-size: 14px;
+    }
+    .datosContact .ubicacion div i{
+        font-size: 26px;
+    }
+    .datosContact .ubicacion .details h2{
+        font-size: 20px;
+    }
+    .datosContact .ubicacion .details p{
+        font-size: 14px;
+    }
+    .datosContact .ubicacion .details a{
+        font-size: 14px;
+    }
+    .formulario{
+        width: 55%;
+        background-color: #f4fcff;
+        padding: 1rem;
+    }
+    .formulario .text-formulario h2{
+        font-size: 24px;
+    }
+    .formulario .text-formulario p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .formulario form .form-group{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+    .container{
+        max-width: 90%;
+    }
+    .contactenos-containers{
+        display: flex;
+        flex-direction: column;
+    }
+    .datosContact{
+        width: 100%;
+    }
+    .datosContact p{
+        font-size: 14px;
+    }
+    .datosContact h1{
+        font-size: 26px;
+    }
+    .datosContact .correo div i{
+        font-size: 35px;
+    }
+    .datosContact .correo .details h2{
+        font-size: 22px;
+    }
+    .datosContact .correo .details p span{
+        font-size: 14px;
+    }
+    .datosContact .correo .details p{
+        font-size: 14px;
+    }
+    .datosContact .ubicacion div i{
+        font-size: 35px;
+    }
+    .datosContact .ubicacion .details h2{
+        font-size: 22px;
+    }
+    .datosContact .ubicacion .details p{
+        font-size: 14px;
+    }
+    .datosContact .ubicacion .details a{
+        font-size: 14px;
+    }
+    .formulario{
+        width: 100%;
+        padding: 40px 16px 16px 16px;
+    }
+    .formulario .text-formulario h2{
+        font-size: 26px;
+    }
+    .formulario .text-formulario p{
+        font-size: 14px;
+    }
+    .formulario form input, .formulario form textarea{
+        padding: 15px 15px;
+        font-size: 14px;
+    }
+    .formulario form button{
+        font-size: 14px;
+        height: 50px;
+    }
+}
+@media (min-width: 361px) and (max-width: 430px){
+    .container{
+        width: 90%;
+    }
+    .datosContact p{
+        font-size: 12px;
+    }
+    .datosContact h1{
+        font-size: 24px;
+    }
+    .datosContact .correo div i{
+        font-size: 30px;
+    }
+    .datosContact .correo .details h2{
+        font-size: 20px;
+    }
+    .datosContact .correo .details p span{
+        font-size: 14px;
+    }
+    .datosContact .correo .details p{
+        font-size: 14px;
+    }
+    .datosContact .ubicacion div i{
+        font-size: 30px;
+    }
+    .datosContact .ubicacion .details h2{
+        font-size: 20px;
+    }
+    .datosContact .ubicacion .details p{
+        font-size: 14px;
+    }
+    .datosContact .ubicacion .details a{
+        font-size: 14px;
+    }
+    .formulario{
+        width: 100%;
+        padding: 40px 16px 16px 16px;
+    }
+    .formulario .text-formulario h2{
+        font-size: 24px;
+    }
+    .formulario .text-formulario p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .formulario form input, .formulario form textarea{
+        padding: 15px 15px;
+        font-size: 14px;
+    }
+    .formulario form button{
+        font-size: 14px;
+        height: 50px;
+    }
+    
+}
+@media (max-width: 360px){
+    .container{
+        width: 90%;
+    }
+    .datosContact p{
+        font-size: 12px;
+    }
+    .datosContact h1{
+        font-size: 22px;
+    }
+    .datosContact .correo div i{
+        font-size: 28px;
+    }
+    .datosContact .correo .details h2{
+        font-size: 18px;
+    }
+    .datosContact .correo .details p span{
+        font-size: 12px;
+    }
+    .datosContact .correo .details p{
+        font-size: 12px;
+    }
+    .datosContact .ubicacion div i{
+        font-size: 28px;
+    }
+    .datosContact .ubicacion .details h2{
+        font-size: 18px;
+    }
+    .datosContact .ubicacion .details p{
+        font-size: 12px;
+    }
+    .datosContact .ubicacion .details a{
+        font-size: 12px;
+    }
+    .formulario{
+        width: 100%;
+        padding: 40px 16px 16px 16px;
+    }
+    .formulario .text-formulario h2{
+        font-size: 22px;
+    }
+    .formulario .text-formulario p{
+        text-align: center;
+        font-size: 12px;
+    }
+    .formulario form input, .formulario form textarea{
+        padding: 15px 15px;
+        font-size: 12px;
+    }
+    .formulario form button{
+        font-size: 12px;
+        height: 50px;
+    }
+}

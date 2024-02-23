@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --color-icono : #325070;
+    --headertop-btn-sub : #0E3C80;
+    --btnslider: #223D80;
+    --btndoctor: #F5AD38;
+    --navletter: #2B2B2B;
+    --especialidades: #457baa;
+    --texto: #545454;
+    --footer: #33566F;
+    --copyright: #335369;
+    --colorTriangle: #f18e00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    font-family:  'Roboto', sans-serif;
+    outline: none;
+    transition: .2s;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.title-line{
+    border-left: 5px solid var(--btndoctor);
+    padding-left: 15px;
+    margin: 0px 0px 20px;
+}
+.title-quirurgico h2{
+    color: var(--headertop-btn-sub);
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.titulo{
+    margin-top: 50px;
+}
+
+main section{
+    padding: 70px 0;
+}
+.card-quirurgico {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: calc(100% / 1);
+    background-color: rgb(252, 247, 239);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: var(--btnslider);
+}
+
+.card-content p{
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.3;
+}

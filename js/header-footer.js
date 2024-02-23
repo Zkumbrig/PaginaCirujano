@@ -40,12 +40,12 @@ const newHtml = `
     <div class="nav">
         <ul>
             <div class="logoDr">
-                <img src="img/logo.webp" alt="">
+                <a href="index.html"><img src="img/logo.webp" alt=""></a>
             </div>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="about.html">Su Cirujano</a></li>
-            <li><a href="categoria.html">Procedimientos Quirúrjicos</a></li>
-            <li><a href="categoria.html">No Quirúrjicos</a></li>
+            <li><a href="categoriaquirurjicos.html">Procedimientos Quirúrjicos</a></li>
+            <li><a href="categorianoquirurjicos.html">No Quirúrjicos</a></li>
             <li><a href="galeria.html">Galería</a></li>
             <li><a href="blog.html">Blog</a></li>
             <a href="contact.html" class="btn-nav" ><i class="fa-regular fa-calendar"></i><p>Contactanos</p></a>
