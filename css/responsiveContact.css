@@ -212,7 +212,8 @@
     }
     .formulario{
         width: 100%;
-        padding: 40px 16px 16px 16px;
+        margin-top: 50px;
+        padding: 16px 16px 16px 16px;
     }
     .formulario .text-formulario h2{
         font-size: 26px;
@@ -265,7 +266,8 @@
     }
     .formulario{
         width: 100%;
-        padding: 40px 16px 16px 16px;
+        margin-top: 50px;
+        padding: 16px 16px 16px 16px;
     }
     .formulario .text-formulario h2{
         font-size: 24px;
@@ -320,7 +322,8 @@
     }
     .formulario{
         width: 100%;
-        padding: 40px 16px 16px 16px;
+        margin-top: 50px;
+        padding: 16px 16px 16px 16px;
     }
     .formulario .text-formulario h2{
         font-size: 22px;
