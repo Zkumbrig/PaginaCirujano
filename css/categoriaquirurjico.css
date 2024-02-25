@@ -65,8 +65,7 @@ main section{
 
 .card img{
     width: 100%;
-    height: auto;
-    
+    height: auto; 
 }
 
 .card-content{
