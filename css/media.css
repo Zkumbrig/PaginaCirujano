@@ -1,3 +1,15 @@
+:root{
+    --color-icono : #325070;
+    --headertop-btn-sub : #0E3C80;
+    --btnslider: #223D80;
+    --btndoctor: #F5AD38;
+    --navletter: #2B2B2B;
+    --especialidades: #457baa;
+    --texto: #545454;
+    --footer: #33566F;
+    --copyright: #335369;
+}
+
 @media screen and (max-width: 1280px){
      /*____ Content ____*/
     .container{

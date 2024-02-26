@@ -1,0 +1,191 @@
+:root{
+    --color-icono : #325070;
+    --headertop-btn-sub : #0E3C80;
+    --btnslider: #223D80;
+    --btndoctor: #F5AD38;
+    --navletter: #2B2B2B;
+    --especialidades: #457baa;
+    --texto: #545454;
+    --footer: #33566F;
+    --copyright: #335369;
+    --colorTriangle: #f18e00;
+}
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+
+@media screen and (max-width: 1280px){
+    .container{
+        margin: 0 auto;
+        max-width:  1200px;
+        width: 100%;
+    }
+    .title-quirurgico h2{
+        color: var(--headertop-btn-sub);
+        font-weight: 500;
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .card-quirurgico {
+        gap: 35px;
+    }
+    .card-content h3{
+        font-size: 28px;
+        margin-bottom: 8px;
+        color: var(--btnslider);
+    }
+    
+    .card-content p{
+        color: #000000;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .container{
+        max-width: 95%;
+    }
+    .title-quirurgico h2{
+        color: var(--headertop-btn-sub);
+        font-weight: 500;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .card-quirurgico {
+        gap: 35px;
+    }
+    .card-content h3{
+        font-size: 26px;
+        margin-bottom: 8px;
+        color: var(--btnslider);
+    }
+    
+    .card-content p{
+        color: #000000;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 90%;
+    }
+    .title-quirurgico h2{
+        color: var(--headertop-btn-sub);
+        font-weight: 500;
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+    .card-quirurgico {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 35px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card-content h3{
+        font-size: 24px;
+        margin-bottom: 8px;
+        color: var(--btnslider);
+    }
+    
+    .card-content p{
+        color: #000000;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .container{
+        max-width: 90%;
+    }
+    .title-quirurgico h2{
+        color: var(--headertop-btn-sub);
+        font-weight: 500;
+        font-size: 26px;
+        margin-bottom: 50px;
+    }
+    .card-quirurgico {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 35px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card-content h3{
+        font-size: 22px;
+        margin-bottom: 8px;
+        color: var(--btnslider);
+    }
+    
+    .card-content p{
+        color: #000000;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}
+@media (min-width: 361px) and (max-width: 430px){
+    .container{
+        width: 90%;
+    }
+    .title-quirurgico h2{
+        color: var(--headertop-btn-sub);
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    .card-quirurgico {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 35px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card-content h3{
+        font-size: 20px;
+        margin-bottom: 8px;
+        color: var(--btnslider);
+    }
+    
+    .card-content p{
+        color: #000000;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    
+}
+@media (max-width: 360px){
+    .container{
+        width: 90%;
+    }
+    .title-quirurgico h2{
+        color: var(--headertop-btn-sub);
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+    .card-quirurgico {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 35px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card-content h3{
+        font-size: 18px;
+        margin-bottom: 8px;
+        color: var(--btnslider);
+    }
+    
+    .card-content p{
+        color: #000000;
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    
+}

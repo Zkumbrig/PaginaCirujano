@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded',()=>{
 const header = document.getElementById('headerInner');
 const footer = document.getElementById('footerInner');
 
@@ -29,39 +28,39 @@ const newHtml = `
     </div>
 </div>
 </section>
-<section class="navbar">
-<div class="container navbar__content">
-    <div class="logoDr">
-        <a href="index.html"><img src="img/logo.webp" alt=""></a>
+<section class="navbar" id="navBar">
+    <div class="container navbar__content">
+        <div class="logoDr">
+            <a href="/index.html"><img src="/img/logo.webp" alt=""></a>
+        </div>
+        <div class="menu-icon">
+            <p>Menu <i class="fa-solid fa-bars"></i></p>
+        </div>
+        <div class="nav">
+            <ul>
+                <div class="logoDr">
+                    <a href="index.html"><img src="img/logo.webp" alt=""></a>
+                </div>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/about.html">Su Cirujano</a></li>
+                <li><a href="/categoriaquirurjicos.html">Procedimientos Quirúrjicos</a></li>
+                <li><a href="/categorianoquirurjicos.html">No Quirúrjicos</a></li>
+                <li><a href="/galeria.html">Galería</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <a href="/contact.html" class="btn-nav" ><i class="fa-regular fa-calendar"></i><p>Contactanos</p></a>
+            </ul>
+        </div>
+        <!-- <div class="menu-icon">
+            <p>Menu</p>
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+        </div> -->
     </div>
-    <div class="menu-icon">
-        <p>Menu <i class="fa-solid fa-bars"></i></p>
-    </div>
-    <div class="nav">
-        <ul>
-            <div class="logoDr">
-                <a href="index.html"><img src="img/logo.webp" alt=""></a>
-            </div>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Su Cirujano</a></li>
-            <li><a href="categoriaquirurjicos.html">Procedimientos Quirúrjicos</a></li>
-            <li><a href="categorianoquirurjicos.html">No Quirúrjicos</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <a href="contact.html" class="btn-nav" ><i class="fa-regular fa-calendar"></i><p>Contactanos</p></a>
-        </ul>
-    </div>
-    <!-- <div class="menu-icon">
-        <p>Menu</p>
-        <a href=""><i class="fa-solid fa-bars"></i></a>
-    </div> -->
-</div>
 </section>
 `;
 const newFooter = `<div class="container footer-content">
 <div class="row-footer">
     <section class="dr-footer-section">
-        <img src="img/logo-blanco-footer.webp" alt="">
+        <img src="/img/logo-blanco-footer.webp" alt="">
         <p>Cirujano Plástico Certificado especializado en BRASIL y EEUU</p>
     </section>
     <section class="ubicanos-footer">
@@ -110,4 +109,18 @@ const newFooter = `<div class="container footer-content">
     document.querySelector('.menu-icon').addEventListener('click', function() {
     document.querySelector('.nav').classList.toggle('active');
 });
+const navbar = document.getElementById('navBar');
+
+document.addEventListener("scroll",()=>{
+    if(window.scrollY > 100){
+        navbar.style.position = "fixed";
+        navbar.style.top = "0";
+        navbar.style.zIndex = "100";
+        navbar.style.boxShadow = "0 0 10px #222"
+        console.log(`el scroll es ${window.scrollY}`)
+    }
+    else{
+        navbar.style.position = "initial";
+        navbar.style.boxShadow = "none"
+    }
 });
