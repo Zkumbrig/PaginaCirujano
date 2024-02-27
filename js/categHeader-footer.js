@@ -30,7 +30,7 @@ const newHtml = `
 <section class="navbar" id="navBar">
     <div class="container navbar__content">
         <div class="logoDr">
-            <a href="index.html"><img src="img/logo.webp" alt=""></a>
+            <a href="/index.html"><img src="/img/logo.webp" alt=""></a>
         </div>
         <div class="menu-icon">
             <p>Menu <i class="fa-solid fa-bars"></i></p>
@@ -40,13 +40,13 @@ const newHtml = `
                 <div class="logoDr">
                     <a href="index.html"><img src="img/logo.webp" alt=""></a>
                 </div>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Su Cirujano</a></li>
-                <li><a href="categoriaquirurjicos.html">Procedimientos Quirúrjicos</a></li>
-                <li><a href="categorianoquirurjicos.html">No Quirúrjicos</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <a href="contact.html" class="btn-nav" ><i class="fa-regular fa-calendar"></i><p>Contactanos</p></a>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/about.html">Su Cirujano</a></li>
+                <li><a href="/categoriaquirurjicos.html">Procedimientos Quirúrjicos</a></li>
+                <li><a href="/categorianoquirurjicos.html">No Quirúrjicos</a></li>
+                <li><a href="/galeria.html">Galería</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <a href="/contact.html" class="btn-nav" ><i class="fa-regular fa-calendar"></i><p>Contactanos</p></a>
             </ul>
         </div>
         <!-- <div class="menu-icon">
@@ -59,7 +59,7 @@ const newHtml = `
 const newFooter = `<div class="container footer-content">
 <div class="row-footer">
     <section class="dr-footer-section">
-        <img src="img/logo-blanco-footer.webp" alt="">
+        <img src="/img/logo-blanco-footer.webp" alt="">
         <p>Cirujano Plástico Certificado especializado en BRASIL y EEUU</p>
     </section>
     <section class="ubicanos-footer">
