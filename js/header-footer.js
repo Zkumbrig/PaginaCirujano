@@ -31,7 +31,7 @@ const newHtml = `
 <section class="navbar" id="navBar">
     <div class="container navbar__content">
         <div class="logoDr">
-            <a href="/index.html"><img src="/img/logo.webp" alt=""></a>
+            <a href="index.html"><img src="img/logo.webp" alt=""></a>
         </div>
         <div class="menu-icon">
             <p>Menu <i class="fa-solid fa-bars"></i></p>
@@ -60,7 +60,7 @@ const newHtml = `
 const newFooter = `<div class="container footer-content">
 <div class="row-footer">
     <section class="dr-footer-section">
-        <img src="/img/logo-blanco-footer.webp" alt="">
+        <img src="img/logo-blanco-footer.webp" alt="">
         <p>Cirujano Plástico Certificado especializado en BRASIL y EEUU</p>
     </section>
     <section class="ubicanos-footer">
