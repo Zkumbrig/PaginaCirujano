@@ -112,7 +112,7 @@ document.addEventListener("scroll",()=>{
         navbar.style.top = "0";
         navbar.style.zIndex = "100";
         navbar.style.boxShadow = "0 0 10px #222"
-        console.log(`el scroll es ${window.scrollY}`)
+       
     }
     else{
         navbar.style.position = "initial";
