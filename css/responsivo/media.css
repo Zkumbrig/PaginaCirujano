@@ -174,6 +174,9 @@
     .about-dr{
         padding: 30px 12px;
     }
+    .about-dr p{
+        font-size: 16px;
+    }
     .estudios{
         display: grid;
         grid-template-columns: auto auto auto;
@@ -203,6 +206,7 @@
     }
     .estudios div p {
         padding: 30px 0px;
+        font-size: 16px;
     }
 
     /*____ BLOG ____*/
@@ -226,6 +230,10 @@
     .contenido-blog .details-blog article .textBlog{
         width: 100%;
         margin-top: 10px;
+    }
+
+    .contenido-blog .details-blog article p{
+        font-size: 16;
     }
     /*____ FORM ____*/
     .formulario{
@@ -329,6 +337,7 @@
         width: 100%;
         margin-bottom: 14px;
         padding: 0px;
+        font-size: 16px;
     }
     .secciones{
         width: 100%;
@@ -578,7 +587,34 @@
     .form-container .form-info{
         width: 100%;
     }
-
+    .form-container .form-info .info-contact h2{
+        font-size: 24px;
+    }
+    .form-container .form-info .info-contact p{
+        font-size: 16px;
+    }
+    .form-container .form-info .info-contact p a{
+        font-size: 16px;
+    }
+    .form-container .form-info .consulta-info .consulta > i{
+        padding: 10px;
+        font-size: 26px;
+    }
+    .form-container .form-info .consulta-info .consulta h2{
+        font-size: 24px;
+    }
+    .form-container .form-info .consulta-info .consulta > ul > li i{
+        font-size: 10px;
+    }
+    .form-container .form-info .consulta-info .consulta > ul > li {
+        font-size: 16px;
+    }
+    .form-container form button{
+        height: 40px;
+        width: 160px;
+        font-size: 16px;
+    }
+    
     /*____ FOOTER ____*/
     .footer-content{
         padding-top: 70px;
@@ -618,7 +654,7 @@
         color: #ffffff;
         margin-right: 10px;
         display: flex;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     /*____ NAVBAR ____*/
@@ -652,7 +688,10 @@
         
     .slider-indicators {
         position: relative;
-        top: 285px;
+        top: 270px;
+    }
+    .slider-indicators li{
+        border: 2px solid var(--btnslider);
     }
     .content-slider h2{
         font-size: 22px;
@@ -801,7 +840,7 @@
         width: 100%;
     }
     .form-container .form-info .info-contact h2{
-        font-size: 26px;
+        font-size: 22px;
     }
     .form-container .form-info .info-contact p{
         font-size: 14px;
@@ -811,15 +850,22 @@
     }
     .form-container .form-info .consulta-info .consulta > i{
         padding: 10px;
-        font-size: 28px;
+        font-size: 24px;
     }
     .form-container .form-info .consulta-info .consulta h2{
-        font-size: 26px;
+        font-size: 22px;
     }
     .form-container .form-info .consulta-info .consulta > ul > li i{
         font-size: 10px;
     }
-
+    .form-container .form-info .consulta-info .consulta > ul > li {
+        font-size: 14px;
+    }
+    .form-container form button{
+        height: 40px;
+        width: 140px;
+        font-size: 14px;
+    }
     /*____ FOOTER ____*/
     .footer{
         height: 700px;
@@ -900,7 +946,7 @@
     }
     
 }
-@media (min-width: 361px) and (max-width: 430px) {
+@media (min-width: 361px) and (max-width: 510px) {
     .container{
         width: 90%;
     }
@@ -1077,7 +1123,7 @@
     .form-container form button{
         height: 40px;
         width: 120px;
-        font-size: 14px;
+        font-size: 12px;
     }
     /*____ FOOTER ____*/
     .dr-footer-section p{

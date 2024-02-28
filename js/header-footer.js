@@ -12,16 +12,16 @@ const newHtml = `
     <div class="links-redes">
         <ul>
             <li>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/ronaldgamarracirujanoplastico/"><i class="fa-brands fa-facebook-f"></i></a>
             </li>
             <li>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/drgamarra_cirugiaplastica/"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href="index.html"><i class="fa-brands fa-youtube"></i></a>
             </li>
             <li>
-                <a href=""><i class="fa-solid fa-image-portrait"></i></a>
+                <a href="https://www.doctoralia.pe/ronald-gamarra-garcia/cirujano-plastico/cercado-de-lima"><i class="fa-solid fa-image-portrait"></i></a>
             </li>
         </ul>
     </div>
@@ -42,17 +42,13 @@ const newHtml = `
                 </div>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Su Cirujano</a></li>
-                <li><a href="categoriaquirurjicos.html">Procedimientos Quirúrjicos</a></li>
-                <li><a href="categorianoquirurjicos.html">No Quirúrjicos</a></li>
+                <li><a href="categoriaquirurgicos.html">Procedimientos Quirúrjicos</a></li>
+                <li><a href="categorianoquirurgicos.html">No Quirúrjicos</a></li>
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <a href="contact.html" class="btn-nav" ><i class="fa-regular fa-calendar"></i><p>Contactanos</p></a>
             </ul>
         </div>
-        <!-- <div class="menu-icon">
-            <p>Menu</p>
-            <a href=""><i class="fa-solid fa-bars"></i></a>
-        </div> -->
     </div>
 </section>
 `;
@@ -79,16 +75,16 @@ const newFooter = `<div class="container footer-content">
         <p>Siguenos</p>
         <ul class="links-reades-footer">
             <li>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/ronaldgamarracirujanoplastico/"><i class="fa-brands fa-facebook-f"></i></a>
             </li>
             <li>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/drgamarra_cirugiaplastica/"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href="index.html"><i class="fa-brands fa-youtube"></i></a>
             </li>
             <li>
-                <a href=""><i class="fa-solid fa-image-portrait"></i></a>
+                <a href="https://www.doctoralia.pe/ronald-gamarra-garcia/cirujano-plastico/cercado-de-lima"><i class="fa-solid fa-image-portrait"></i></a>
             </li>
         </ul>
     </section>

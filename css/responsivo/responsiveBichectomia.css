@@ -1,0 +1,357 @@
+:root{
+    --color-icono : #325070;
+    --headertop-btn-sub : #0E3C80;
+    --btnslider: #223D80;
+    --btndoctor: #F5AD38;
+    --navletter: #2B2B2B;
+    --especialidades: #457baa;
+    --texto: #545454;
+    --footer: #33566F;
+    --copyright: #335369;
+    --colorTriangle: #f18e00;
+}
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+
+@media screen and (max-width: 1280px){
+    .container{
+        margin: 0 auto;
+        max-width:  1200px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 990px){
+    .container{
+        max-width: 95%;
+    }
+    .bannerCategory{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .bannerCategory img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .bannerCategory .txtBanner{
+        width: 100%;
+        height: 100%;
+        justify-content: left;
+        position: absolute;
+        align-items: center;
+        display: flex;
+    }
+    .bannerCategory h1{
+        color: #ffff;
+        font-size: 30px;
+        z-index: 10;
+        font-weight: bold;
+    }
+    
+    .bannerCategory span{
+        color: #ffff;
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 90%;
+    }
+    .bannerCategory img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .bannerCategory h1{
+        color: #ffff;
+        font-size: 24px;
+        z-index: 10;
+        font-weight: bold;
+    }
+    
+    .bannerCategory span{
+        color: #ffff;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .primary-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .primary-info img{
+        width: 100%;
+        padding: 0;
+    }
+    .primary-info p{
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .primary-info p span{
+        font-size: 16px;
+    }
+    .iconInfo .iconos{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .iconos .incon{
+        padding: 10px;
+    }
+    .iconInfo .iconos .incon i{
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+    }
+    .iconInfo .iconos .incon h3{
+        font-size: 16px;
+    }
+    
+    .iconInfo .iconos .incon p{
+        font-size: 16px;
+    }
+    .second-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .second-info img{
+        width: 100%;
+        padding: 0;
+    }
+    .second-info p{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .second-info p span{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .container{
+        max-width: 90%;
+    }
+    .bannerCategory img{
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        aspect-ratio: 16 / 4.5;
+    }
+    .bannerCategory h1{
+        color: #ffff;
+        font-size: 20px;
+        z-index: 10;
+        font-weight: bold;
+    }
+    
+    .bannerCategory span{
+        color: #ffff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .primary-info p{
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .primary-info p span{
+        font-size: 14px;
+    }
+    .iconInfo .iconos{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .iconos .incon{
+        padding: 10px;
+    }
+    .iconInfo .iconos .incon i{
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+    }
+    .iconInfo .iconos .incon h3{
+        font-size: 14px;
+    }
+    
+    .iconInfo .iconos .incon p{
+        font-size: 14px;
+    }
+    .second-info p{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .second-info p span{
+        font-size: 14px;
+    }
+}
+@media (min-width: 361px) and (max-width: 430px){
+    .container{
+        width: 90%;
+    }
+    .bannerCategory img{
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        aspect-ratio: 16 / 5;
+    }
+    .bannerCategory h1{
+        color: #ffff;
+        font-size: 18px;
+        z-index: 10;
+        font-weight: bold;
+    }
+    
+    .bannerCategory span{
+        color: #ffff;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .bannerCategory h1{
+        color: #ffff;
+        font-size: 20px;
+        z-index: 10;
+        font-weight: bold;
+    }
+    
+    .bannerCategory span{
+        color: #ffff;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .primary-info img{
+        width: 100%;
+        padding: 0;
+        height: 250px;
+    }
+    .primary-info p{
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .primary-info p span{
+        font-size: 14px;
+    }
+    .iconInfo .iconos{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .iconos .incon{
+        padding: 10px;
+    }
+    .iconInfo .iconos .incon i{
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+    }
+    .iconInfo .iconos .incon h3{
+        font-size: 14px;
+    }
+    
+    .iconInfo .iconos .incon p{
+        font-size: 14px;
+    }
+    .second-info img{
+        width: 100%;
+        padding: 0;
+        height: 250px;
+    }
+    .second-info p{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .second-info p span{
+        font-size: 14px;
+    }
+    
+}
+@media (max-width: 360px){
+    .container{
+        width: 90%;
+    }
+    .bannerCategory img{
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        aspect-ratio: 16 / 5;
+    }
+    .bannerCategory h1{
+        color: #ffff;
+        font-size: 16px;
+        z-index: 10;
+        font-weight: bold;
+    }
+    
+    .bannerCategory span{
+        color: #ffff;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .primary-info img{
+        width: 100%;
+        padding: 0;
+        height: 200px;
+    }
+    .primary-info p{
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .primary-info p span{
+        font-size: 12px;
+    }
+    .iconInfo .iconos{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .iconos .incon{
+        padding: 10px;
+    }
+    .iconInfo .iconos .incon i{
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+    }
+    .iconInfo .iconos .incon h3{
+        font-size: 12px;
+    }
+    
+    .iconInfo .iconos .incon p{
+        font-size: 12px;
+    }
+    .second-info img{
+        width: 100%;
+        padding: 0;
+        height: 200px;
+    }
+    .second-info p{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .second-info p span{
+        font-size: 12px;
+    }
+    
+}
