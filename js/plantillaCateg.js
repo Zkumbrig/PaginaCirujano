@@ -45,4 +45,3 @@
 // window.addEventListener("load", function() {
 //     cargarCards("facial");
 // });
-
